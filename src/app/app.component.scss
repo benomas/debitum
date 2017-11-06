@@ -1,0 +1,15 @@
+.container-fluid{
+	border:1px solid #CCCCCC;
+	background-color: #F2F2F2;
+	display:inline-flex;
+	padding-left: 0;
+}
+.full-height{
+	height: auto;
+	width: 100%;
+	display:inline-block;
+}
+app-menu{
+	background-color: #000000;
+	display: inherit;
+}

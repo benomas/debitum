@@ -7,23 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalendarComponent implements OnInit {
 
-	public showYearMenu:boolean;
-	public showMonthMenu:boolean;
+	public years:any;
+	public months:any;
+	public model1;
+	public model2;
   constructor() {
-  	this.showYearMenu=false;
-		this.showMonthMenu=false;
+  	this.years=["2015","2016","2017"];
+		this.months=[
+			"Enero",
+			"Febrero",
+			"Marzo",
+			"Abril",
+			"Mayo",
+			"Junio",
+			"Julio",
+			"Agosto",
+			"Septiembre",
+			"Octubre",
+			"Noviembre",
+			"Diciembre"];
   }
 
   ngOnInit() {
-  }
-
-  toogleYearMenu(){
-  	this.showYearMenu = !this.showYearMenu;
-  	this.showMonthMenu = false;
-  }
-  
-  toogleMonthMenu(){
-  	this.showMonthMenu = !this.showMonthMenu;
-  	this.showYearMenu = false;
   }
 }

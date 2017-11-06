@@ -1,3 +1,89 @@
-<p>
-  menu works!
-</p>
+<!--
+ 
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+    	<span class="minimum-space">
+    		<i class="fa fa-circle-o-notch" aria-hidden="true"></i>
+    	</span>
+    	<span class="extra-item-data">
+    		Conciliaciones
+    	</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="#">
+    	<span class="minimum-space">
+    		<i class="fa fa-users" aria-hidden="true"></i>
+    	</span>
+    	<span class="extra-item-data">
+    		Clientes
+    	</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="#">
+    	<span class="minimum-space">
+    		<i class="fa fa-area-chart" aria-hidden="true"></i>
+    	</span>
+    	<span class="extra-item-data">
+    		Reportes
+    	</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="#">
+    	<span class="minimum-space">
+    		<i class="fa fa-gavel" aria-hidden="true"></i>
+    	</span>
+    	<span class="extra-item-data">
+    		Declaraciones
+    	</span>
+    </a>
+  </li>
+</ul>
+<div style="position:bottom;">
+</div>
+-->
+<div class="minimum-items-container"> 
+	<div class="minimum-item-data shared-sizes" (mouseenter)="setActiveItem('Dashboard')" (mouseleave) ="setActiveItem('')" [ngClass]="addClass('Dashboard')" >
+		<i class="fa fa-address-card" aria-hidden="true" ></i>
+	</div>
+	<div class="minimum-item-data shared-sizes" (mouseenter)="setActiveItem('Facturación')" (mouseleave) ="setActiveItem('')" [ngClass]="addClass('Facturación')">
+		<i class="fa fa-ticket" aria-hidden="true"></i>
+	</div>
+	<div class="minimum-item-data shared-sizes" (mouseenter)="setActiveItem('Conciliaciones')" (mouseleave) ="setActiveItem('')" [ngClass]="addClass('Conciliaciones')">
+		<i class="fa fa-circle-o-notch" aria-hidden="true"></i>
+	</div>
+	<div class="minimum-item-data shared-sizes" (mouseenter)="setActiveItem('Clientes')" (mouseleave) ="setActiveItem('')" [ngClass]="addClass('Clientes')">
+		<i class="fa fa-users" aria-hidden="true"></i>
+	</div>
+	<div class="minimum-item-data shared-sizes" (mouseenter)="setActiveItem('Reportes')" (mouseleave) ="setActiveItem('')" [ngClass]="addClass('Reportes')">
+		<i class="fa fa-area-chart" aria-hidden="true"></i>
+	</div>
+	<div class="minimum-item-data shared-sizes" (mouseenter)="setActiveItem('Declaraciones')" (mouseleave) ="setActiveItem('')" [ngClass]="addClass('Declaraciones')">
+		<i class="fa fa-gavel" aria-hidden="true"></i>
+	</div>
+	<div class="minimum-item-data shared-sizes" (mouseenter)="setActiveItem('Declaraciones')" (mouseleave) ="setActiveItem('')" [ngClass]="addClass('Declaraciones')">
+		<i class="fa fa-gavel" aria-hidden="true"></i>
+	</div>
+</div>
+<div class="extra-items-container d-none d-sm-block"> 
+	<div class="extra-item-data shared-sizes" (mouseenter)="setActiveItem('Dashboard')" (mouseleave) ="setActiveItem('')">
+		Dashboard
+	</div>
+	<div class="extra-item-data shared-sizes" (mouseenter)="setActiveItem('Facturación')" (mouseleave) ="setActiveItem('')">
+		Facturación
+	</div>
+	<div class="extra-item-data shared-sizes" (mouseenter)="setActiveItem('Conciliaciones')" (mouseleave) ="setActiveItem('')">
+		Conciliaciones
+	</div>
+	<div class="extra-item-data shared-sizes" (mouseenter)="setActiveItem('Clientes')" (mouseleave) ="setActiveItem('')">
+		Clientes
+	</div>
+	<div class="extra-item-data shared-sizes" (mouseenter)="setActiveItem('Reportes')" (mouseleave) ="setActiveItem('')">
+		Reportes
+	</div>
+	<div class="extra-item-data shared-sizes" (mouseenter)="setActiveItem('Declaraciones')" (mouseleave) ="setActiveItem('')">
+		Declaraciones
+	</div>
+</div>

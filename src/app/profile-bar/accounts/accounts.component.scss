@@ -34,16 +34,6 @@
 		cursor:pointer;
 	}
 }
-
-.menu-toggler{
-	display: inherit;
-	vertical-align: middle;
-	padding:6px;
-	border:1px solid #CCCCCC;
-	border-radius:5px;
-	cursor:pointer;
-}
-
 .extra-data{
 	padding:6px;
 	color:#999999;
@@ -55,5 +45,9 @@ ul{
 	width: -moz-available;
 	& li{
 		line-height: 1.0;
+		text-align: center;
 	}
+}
+.menu-toggler{
+	background-color:#006B68; 
 }

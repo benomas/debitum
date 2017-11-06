@@ -8,8 +8,10 @@ import { Account } from './account';
 })
 export class AccountsComponent implements OnInit {
 
+	public menuToggler:boolean; 
 	public accounts:Account[];
   constructor() {
+  	this.menuToggler=false;
 		this.accounts = [
 			{
 				title:"Cuenta Bancaria",

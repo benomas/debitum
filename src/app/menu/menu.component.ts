@@ -7,9 +7,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+	public navItems:any;
+	public overItem:string;
+	public activeItem:string;
+
+  constructor() { 
+  	this.navItems=[
+  		"Dashboard",
+  		"Facturación",
+  		"Conciliaciones",
+  		"Clientes",
+  		"Reportes",
+  		"Declaraciones",
+  	];
+  }
 
   ngOnInit() {
   }
 
+  addClass(comparator){
+  	if(comparator === this.overItem)
+  		return "active-item";
+  	return "";
+  }
+
+  removeClass(){
+  }
+
+  setActiveItem(currentItem){
+  		this.overItem = currentItem;
+  }
 }

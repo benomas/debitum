@@ -36,3 +36,88 @@ body{
 hr{
 	margin:6px 0;
 }
+app{
+	&-profile-bar{
+		line-height: 1;
+	}
+	&-filter-bar{
+		line-height: 1;
+	}
+}
+
+.c-btn{
+	font-size:14px;
+	background-color:#FFFFFF;
+	color:#4F4F4F;
+	border:none;
+	padding: 0.12rem 0.5rem;
+	cursor:pointer;
+	&:hover{
+		color: #fff;
+		background-color: #01B8A4;
+		border:none;
+	}
+	&:active{
+		color: #fff;
+		background-color: #01B8A4;
+		border:none;
+		box-shadow:none;
+	}
+	&:focus{
+		color: #fff;
+		background-color: #01B8A4;
+		border:none;
+		box-shadow:none;
+	}
+	&:not([disabled]):not(.disabled):active{
+		color: #fff;
+		background-color: #01B8A4;
+		border:none;
+		box-shadow:none;
+	} 
+	&:not([disabled]):not(.disabled).active{
+		color: #fff;
+		background-color: #01B8A4;
+		border:none;
+		box-shadow:none;
+	}
+}
+
+.menu-toggler{
+	display: inherit;
+	vertical-align: middle;
+	padding:6px;
+	border:1px solid #CCCCCC;
+	border-radius:5px;
+	cursor:pointer;
+}
+
+$smMaxWidth: 540px;
+$mdMaxWidth: 720px;
+$lgMaxWidth: 960px;
+$xlMaxWidth: 1140px;
+
+$smBreakpoint: 576px;
+$mdBreakpoint: 768px;
+$lgBreakpoint: 992px;
+$xlBreakpoint: 1200px;
+
+.dashboar-container{
+	padding:10px 80px;
+}
+@media (max-width:$smBreakpoint){
+	.container-fluid{
+		margin-top: 10px;
+	}
+	.dashboar-container{
+		padding:5px 3px 5px 15px;
+	}
+}
+
+
+@media (min-width:$smBreakpoint){
+	.container-fluid{
+		margin-top:10px;
+		min-height: 400px;
+	}
+}

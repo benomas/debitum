@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Routing } from './app.routing';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 import { AccountsComponent } from './profile-bar/accounts/accounts.component';
 import { AppComponent } from './app.component';
@@ -34,8 +36,10 @@ import { SearchComponent } from './filter-bar/search/search.component';
     SearchComponent
   ],
   imports: [
-    Routing
+    Routing,
     BrowserModule,
+    FormsModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
