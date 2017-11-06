@@ -1,0 +1,21 @@
+span{
+	padding:3px;
+	font-size:18px;
+	display:-webkit-box;
+}
+img{
+	width:25px;
+	margin:4px;
+}
+label{
+	margin-bottom: 0;
+}
+.form-group{
+	margin-bottom: 0;
+	& input{
+		padding: 0.2rem 0.3rem;
+		line-height: 1.5;
+		border: 1px solid #ced4da;
+		font-size:12px;
+	}
+}

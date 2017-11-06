@@ -1,0 +1,39 @@
+.dropdown-menu{
+	display:inline-block;
+}
+
+button{
+	font-size:14px;
+	background-color:#FFFFFF;
+	color:#4F4F4F;
+	border:none;
+	&:hover{
+		color: #fff;
+		background-color: #01B8A4;
+		border:none;
+	}
+	&:active{
+		color: #fff;
+		background-color: #01B8A4;
+		border:none;
+		box-shadow:none;
+	}
+	&:focus{
+		color: #fff;
+		background-color: #01B8A4;
+		border:none;
+		box-shadow:none;
+	}
+	&:not([disabled]):not(.disabled):active{
+		color: #fff;
+		background-color: #01B8A4;
+		border:none;
+		box-shadow:none;
+	} 
+	&:not([disabled]):not(.disabled).active{
+		color: #fff;
+		background-color: #01B8A4;
+		border:none;
+		box-shadow:none;
+	}
+}

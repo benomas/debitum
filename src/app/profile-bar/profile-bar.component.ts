@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileBarComponent implements OnInit {
 
-  constructor() { }
+	public menuToggler:boolean;
+  constructor() { 
+  	this.menuToggler=false;
+  }
 
   ngOnInit() {
   }

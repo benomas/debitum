@@ -3,32 +3,39 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Routing } from './app.routing';
 
+import { AccountsComponent } from './profile-bar/accounts/accounts.component';
 import { AppComponent } from './app.component';
+import { CalendarComponent } from './filter-bar/calendar/calendar.component';
+import { ChartComponent } from './dashboard/chart/chart.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { ProfileBarComponent } from './profile-bar/profile-bar.component';
+import { DetailComponent } from './dashboard/detail/detail.component';
 import { FilterBarComponent } from './filter-bar/filter-bar.component';
+import { LogoComponent } from './profile-bar/logo/logo.component';
 import { MenuComponent } from './menu/menu.component';
-import { CalendarComponent } from './calendar/calendar.component';
-import { ResumeComponent } from './resume/resume.component';
-import { ChartComponent } from './chart/chart.component';
-import { DetailComponent } from './detail/detail.component';
+import { NotificationsComponent } from './profile-bar/notifications/notifications.component';
+import { ProfileBarComponent } from './profile-bar/profile-bar.component';
+import { ResumeComponent } from './dashboard/resume/resume.component';
+import { SearchComponent } from './filter-bar/search/search.component';
 
 @NgModule({
   declarations: [
+    AccountsComponent,
     AppComponent,
-    DashboardComponent,
-    ProfileBarComponent,
-    FilterBarComponent,
-    MenuComponent,
     CalendarComponent,
-    ResumeComponent,
     ChartComponent,
+    DashboardComponent,
     DetailComponent,
-    MyNewComponentComponent
+    FilterBarComponent,
+    LogoComponent,
+    MenuComponent,
+    NotificationsComponent,
+    ProfileBarComponent,
+    ResumeComponent,
+    SearchComponent
   ],
   imports: [
+    Routing
     BrowserModule,
-   	Routing
   ],
   providers: [],
   bootstrap: [AppComponent]
