@@ -1,0 +1,61 @@
+@import "~sass/_variables.scss";
+.component-content{
+	padding:0;
+}
+button{
+	background-color: $green1;
+	&.inactive{
+		background-color: $white1;
+		color:$black2;
+		&:hover{
+			background-color: $green1;
+			color:$white1;
+		}
+	}
+}
+ul{
+	margin-bottom:200px;
+	& li{
+		padding:10px;
+		font-size:12px;
+	}
+}
+.pages-btn,.page-btn{
+	cursor:pointer;
+	background-color: $white1;;
+	color:$gray3;
+		&:hover{
+			background-color: $white1;
+			color:$gray3;
+		}
+}
+.detail-foter{
+	text-align: center;
+	min-height: 40px;
+}
+.show > .btn-outline-primary.dropdown-toggle{
+		color: $gray3;
+		background-color: $white1;
+		border:none;
+		box-shadow:none;
+}
+i{
+	margin-right:20px;
+	margin-left:20px;
+}
+
+.description{
+	width: 60%;
+}
+.quantity{
+	width: 40%;
+}
+
+@media (min-width:$lgBreakpoint){
+	.description{
+		width: 75%;
+	}
+	.quantity{
+		width: 25%;
+	}
+}

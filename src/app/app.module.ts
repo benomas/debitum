@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { Routing } from './app.routing';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { ChartsModule } from 'ng2-charts';
 
 import { AccountsComponent } from './profile-bar/accounts/accounts.component';
 import { AppComponent } from './app.component';
@@ -18,6 +20,7 @@ import { NotificationsComponent } from './profile-bar/notifications/notification
 import { ProfileBarComponent } from './profile-bar/profile-bar.component';
 import { ResumeComponent } from './dashboard/resume/resume.component';
 import { SearchComponent } from './filter-bar/search/search.component';
+import { DiaryComponent } from './dashboard/diary/diary.component';
 
 @NgModule({
   declarations: [
@@ -33,13 +36,17 @@ import { SearchComponent } from './filter-bar/search/search.component';
     NotificationsComponent,
     ProfileBarComponent,
     ResumeComponent,
-    SearchComponent
+    SearchComponent,
+    DiaryComponent
   ],
   imports: [
     Routing,
     BrowserModule,
     FormsModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    NgCircleProgressModule.forRoot({
+    }),
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

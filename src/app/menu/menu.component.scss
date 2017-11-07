@@ -1,26 +1,6 @@
-ul{
-	& li{
-		padding: 0.55rem 0rem;
-		& i{
-			color:#858687;
-		}
-		&:hover{
-			background-color: #01B8A4;
-			& i{
-				color:#FFFFFF;
-			}
-		}
-		& .minimum-space{
-		}
-		& .extra-item-data{
-			background-color: #2B2B2E
-		}
-	}
-}
-
 .minimum-items-container{
 	height:auto; 
-	width: 50px; 
+	width: 75px; 
 	background-color: #OOOOOO;
 	color:#858687;
 
@@ -35,6 +15,8 @@ ul{
 
 .minimum-item-data{
 	text-align: center;
+	font-size:18px;
+	padding-left:33%;
 	&:hover{
 		background-color:#01B8A4;
 			& i{
@@ -48,10 +30,11 @@ ul{
 	background-color: #2B2B2E
 }
 .shared-sizes{
-	min-height: 40px;
+	min-height: 50px;
 	vertical-align: middle;
 	cursor:pointer;
-	padding-top: 10px;
+	display:flex;
+	align-items: center;
 }
 .active-item{
 	background-color:#01B8A4;

@@ -1,24 +1,16 @@
-button{
+@import "~sass/_variables.scss";
 
-}
-.show > .btn-outline-primary.dropdown-toggle{
-
-		color: #fff;
-		background-color: #01B8A4;
-		border:none;
-		box-shadow:none;
-}
 input{
 	width:110px;
 	padding: 0.15rem 0.3rem;
 	margin-left:5px;
 	display: inline;
 	cursor:pointer;
-	font-size: 10px;
 }
 .full-view{
 	width:100%;
 }
-.calendar-label{
-	font-size:10px;
+.todo-btn{
+	background-color: $gray1;
+	color:$black2;
 }

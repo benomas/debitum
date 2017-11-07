@@ -1,35 +1,36 @@
+@import "~sass/_variables.scss";
 .btn-success.c-btn{
-	font-size:10px;
-	background-color:#01B8A4;
+	font-size:$fontSize3;
+	background-color:$green2;
 	color:#fff;
 	border:none;
 	padding: 0.12rem 0.5rem;
 	&:hover{
-		color: #006B68;
-		background-color: #8CDFD6;
+		color: $black2;
+		background-color: $green3;
 		border:none;
 	}
 	&:active{
-		color: #006B68;
-		background-color: #8CDFD6;
+		color: $black2;
+		background-color: $green3;
 		border:none;
 		box-shadow:none;
 	}
 	&:focus{
-		color: #006B68;
-		background-color: #8CDFD6;
+		color: $black2;
+		background-color: $green3;
 		border:none;
 		box-shadow:none;
 	}
 	&:not([disabled]):not(.disabled):active{
-		color: #006B68;
-		background-color: #8CDFD6;
+		color: $black2;
+		background-color: $green3;
 		border:none;
 		box-shadow:none;
 	} 
 	&:not([disabled]):not(.disabled).active{
-		color: #006B68;
-		background-color: #8CDFD6;
+		color: $black2;
+		background-color: $green3;
 		border:none;
 		box-shadow:none;
 	}
@@ -48,4 +49,8 @@ ul{
 		text-align: center;
 		padding: 0.55rem 0.25rem;
 	}
+}
+.component-content{
+	width: 100%;
+	padding-top:5px;
 }

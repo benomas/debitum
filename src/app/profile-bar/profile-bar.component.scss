@@ -1,0 +1,59 @@
+.full-view{
+	font-size:10px;
+	line-height: 1.0;
+}
+.account-container{
+	display: inherit;
+	vertical-align: middle;
+	padding:6px;
+	border:1px solid #CCCCCC;
+	border-radius:5px;
+	margin-left:10px;
+}
+
+.text-container{
+	vertical-align: middle;
+	text-align: center;
+	font-weight: 600;
+	& label{
+		margin-bottom: .3em;
+		color:#999999;
+		display: block;
+	}
+	& span{
+		display: block;
+		color:#36C7B7;
+	}
+}
+.expand-button{
+	text-align: center;
+	vertical-align: middle;
+	& i{
+		vertical-align: middle;
+		cursor:pointer;
+	}
+}
+.extra-data{
+	padding:6px;
+	color:#999999;
+}
+ul{
+	margin-top:32px;
+	font-size:10px;
+	min-width: 142px;
+	width: -moz-available;
+	& li{
+		line-height: 1.0;
+		text-align: center;
+	}
+}
+.menu-toggler{
+	background-color:#006B68; 
+}
+.component-content{
+	width: 100%;
+	padding-top:5px;
+}
+.menu-content{
+	width: 100%;
+}

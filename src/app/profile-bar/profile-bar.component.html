@@ -1,8 +1,33 @@
-<div class="row">
-	<app-logo class="col-sm-3 col-1 d-none d-sm-flex">
-	</app-logo>
-	<app-accounts class="col-lg-4 offset-lg-4 col-md-5 offset-md-3 col-sm-6 offset-sm-1 col-9 align-middle">
-	</app-accounts>
-	<app-notifications class="col-3 col-sm-2 col-md-1">
-	</app-notifications>
+<div class="component-content">
+	<div class="d-inline-block d-sm-none menu-content">
+		<div class="d-flex d-sm-none float-left" (click)="menuToggler=!menuToggler">
+			<div class="menu-toggler">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</div>
+		</div>
+		<div *ngIf="menuToggler" class="d-block d-sm-none">
+			<ul class="list-group">
+		  		<li *ngFor="let account of accounts" class="list-group-item">
+					<label>{{account.title}}</label>
+					<span>{{account.data}}</span>
+					<div  (click)="account.showExtraData=!account.showExtraData">
+						<i *ngIf="!account.showExtraData" class="fa fa-sort-desc" aria-hidden="true"></i>
+						<i *ngIf="account.showExtraData" class="fa fa-sort-asc" aria-hidden="true"></i>
+					</div>
+					<div *ngIf="account.showExtraData" class="extra-data">
+						<hr>
+						{{account.extraData}}
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row d-flex align-items-center justify-content-center">
+		<app-logo class="col-sm-3 col-1 d-none d-sm-flex">
+		</app-logo>
+		<app-accounts class="col-lg-4 offset-lg-4 col-md-5 offset-md-3 col-sm-6 offset-sm-1 col-9 align-middle">
+		</app-accounts>
+		<app-notifications class="col-3 col-sm-2 col-md-1 d-none d-sm-flex">
+		</app-notifications>
+	</div>
 </div>

@@ -1,3 +1,12 @@
-<p>
-  chart works!
-</p>
+<div class="component-content d-flex align-items-center justify-content-center">
+  <canvas baseChart 
+    [datasets]="lineChartData"
+    [labels]="lineChartLabels"
+    [options]="lineChartOptions"
+    [colors]="lineChartColors"
+    [legend]="lineChartLegend"
+    [chartType]="lineChartType"
+    (chartHover)="chartHovered($event)"
+    (chartClick)="chartClicked($event)">	
+  </canvas>
+</div>

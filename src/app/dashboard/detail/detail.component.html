@@ -1,3 +1,63 @@
-<p>
-  detail works!
-</p>
+<div class="component-content">
+  <ul class="list-group">
+	  <li class="list-group-item">
+		<button type="button" class="btn btn-sm btn-success c-btn">Ingresos</button>
+		<button type="button" class="btn btn-sm btn-success c-btn inactive">Egresos</button>
+	  </li>
+	  <li class="list-group-item d-flex justify-content-around">
+	  	<span class="text-low description d-block d-sm-inline d-md-block d-xl-block">
+	  		Descripción
+	  	</span>
+	  	<span class="text-low quantity d-block d-sm-inline d-md-block d-xl-block">
+	  		Cantidad
+	  	</span>
+	  </li>
+	  <li class="list-group-item d-flex justify-content-around">
+	  	<span class="description d-block d-sm-inline d-md-block d-xl-block">
+	  		SCOTIABANK INVERLAT, S-A
+	  	</span>
+	  	<span class="quantity d-block d-sm-inline d-md-block d-xl-block">
+	  		-$388.60
+	  	</span>
+	  </li>
+	  <li class="list-group-item d-flex justify-content-around">
+	  	<span class="description d-block d-sm-inline d-md-block d-xl-block">
+	  		JUAN JOSE LEAÑO PADILLA
+	  	</span>
+	  	<span class="quantity d-block d-sm-inline d-md-block d-xl-block">
+	  		-$388.60
+	  	</span>
+	  </li>
+	  <li class="list-group-item d-flex justify-content-around">
+	  	<span class="description d-block d-sm-inline d-md-block d-xl-block">
+	  		ASESORIA ADMINISTRATIVA VAI SA DE CV
+	  	</span>
+	  	<span class="quantity d-block d-sm-inline d-md-block d-xl-block">
+	  		-$15,824.72
+	  	</span>
+	  </li>
+	  <li class="list-group-item d-flex justify-content-around">
+	  	<span class="description d-block d-sm-inline d-md-block d-xl-block">
+	  		JUAN JOSE LEAÑO PADILLA
+	  	</span>
+	  	<span class="quantity d-block d-sm-inline d-md-block d-xl-block">
+	  		-$17,246.88
+	  	</span>
+	  </li>
+	</ul>
+	<hr>
+	<div class="flex align-self-center progress-container detail-foter">
+		<div ngbDropdown class="d-sm-block d-md-inline-block">
+	    	<button class="btn btn-outline-primary c-btn page-btn text-low" id="pages" ngbDropdownToggle>Pagina :1</button>
+	    	<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+					<button 
+						*ngFor="let page of ['1','2','3','4']"
+							class="dropdown-item text-low pages-btn">{{page}}
+					</button>
+	    	</div>
+		    <span class="text-low">
+		    	0 - 0 de 0 <i class="fa fa-chevron-left" aria-hidden="true"></i> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+		    </span>
+		</div>
+	</div>
+</div>

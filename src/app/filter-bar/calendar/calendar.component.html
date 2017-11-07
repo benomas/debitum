@@ -1,34 +1,33 @@
-<div class="full-view d-inline-block d-sm-flex">
-	<div class="col-xl-5 col-lg-6 col-md-7 d-inline-block">
-		<button type="button" class="btn btn-primary btn-sm c-btn d-sm-block d-md-inline-block">Todo</button>
+<div class="full-view d-inline-block d-sm-flex component-content no-gutters">
+	<div class="col-xl-5 col-lg-6 col-md-6 d-sm-flex align-items-center justify-content-center">
+		<button type="button" class="btn btn-primary btn-sm c-btn d-sm-block d-md-inline-block todo-btn">Todo</button>
 		<div ngbDropdown class="d-sm-block d-md-inline-block">
-	    <button class="btn btn-outline-primary c-btn" id="dropdownBasic1" ngbDropdownToggle>Anual</button>
+	    <button class="btn btn-outline-primary c-btn text-low" id="dropdownBasic1" ngbDropdownToggle>Anual</button>
 	    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
 	      <button 
 					*ngFor="let year of years"
-	      	class="dropdown-item c-btn">
+	      	class="dropdown-item c-btn text-low">
 	      		{{year}}
 	      </button>
 	    </div>
 	  </div>
-		<div ngbDropdown class="d-sm-block d-md-inline-block">
-	    <button class="btn btn-outline-primary c-btn" id="dropdownBasic2" ngbDropdownToggle>Mensual</button>
+		<div ngbDropdown class="d-block d-sm-inline-block">
+	    <button class="btn btn-outline-primary c-btn text-low" id="dropdownBasic2" ngbDropdownToggle>Mensual</button>
 	    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
 	      <button 
 					*ngFor="let month of months"
-	      	class="dropdown-item">{{month}}
+	      	class="dropdown-item text-low">{{month}}
 	      </button>
 	    </div>
 	  </div>
 	</div>
-	<div class="col-xl-7 col-lg-6 col-md-5 d-sm-block d-inline-block" >
-		<span class="d-none d-xl-inline calendar-label">
+	<div class="col-xl-7 col-lg-6 col-md-6 d-sm-flex align-items-center justify-content-center" >
+		<span class="d-none d-xl-inline calendar-label text-low">
 			Por Periodo:
 		</span>
-    <input class="form-control" placeholder="aaaa-mm-dd"
-           name="dp" [(ngModel)]="model1" ngbDatepicker #d1="ngbDatepicker" (click)="d1.toggle()">
-    <input class="form-control" placeholder="aaaa-mm-dd"
-           name="dp2" [(ngModel)]="model2" ngbDatepicker #d2="ngbDatepicker" (click)="d2.toggle()">
+	    <input class="form-control text-low" placeholder="aaaa-mm-dd"
+	           name="dp" [(ngModel)]="model1" ngbDatepicker #d1="ngbDatepicker" (click)="d1.toggle()">
+	    <input class="form-control text-low" placeholder="aaaa-mm-dd"
+	           name="dp2" [(ngModel)]="model2" ngbDatepicker #d2="ngbDatepicker" (click)="d2.toggle()">
 	</div>
 </div>
-
