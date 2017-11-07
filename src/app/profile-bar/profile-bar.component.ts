@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Account } from './accounts/account';
 
 @Component({
   selector: 'app-profile-bar',
@@ -6,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile-bar.component.scss']
 })
 export class ProfileBarComponent implements OnInit {
-
-
 	public menuToggler:boolean; 
 	public accounts:Account[];
   constructor() {
@@ -26,6 +25,8 @@ export class ProfileBarComponent implements OnInit {
 				showExtraData:false
 			}
 		];
+  }
+  ngOnInit() {
   }
 
 }

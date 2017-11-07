@@ -1,6 +1,6 @@
 @import "~sass/_variables.scss";
 .component-content{
-	padding:0;
+	padding:0 !important;
 }
 button{
 	background-color: $green1;
@@ -40,8 +40,8 @@ ul{
 		box-shadow:none;
 }
 i{
-	margin-right:20px;
-	margin-left:20px;
+	margin-right:30px;
+	margin-left:30px;
 }
 
 .description{
